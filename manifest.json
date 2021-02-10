@@ -12,7 +12,7 @@
   "packages": {
     "BiasedUrn": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -37,7 +37,7 @@
     },
     "Matrix": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -73,7 +73,7 @@
     },
     "R6": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -102,7 +102,7 @@
     },
     "RColorBrewer": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -127,7 +127,7 @@
     },
     "Rcpp": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -156,7 +156,7 @@
     },
     "askpass": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -188,7 +188,7 @@
     },
     "assertthat": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -215,7 +215,7 @@
     },
     "base64enc": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -240,7 +240,7 @@
     },
     "bookdown": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -272,7 +272,7 @@
     },
     "callr": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -303,7 +303,7 @@
     },
     "cli": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -334,7 +334,7 @@
     },
     "colorspace": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -366,7 +366,7 @@
     },
     "crayon": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -397,7 +397,7 @@
     },
     "curl": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -431,7 +431,7 @@
     },
     "digest": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -460,7 +460,7 @@
     },
     "dplyr": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -493,7 +493,7 @@
     },
     "ellipsis": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -524,7 +524,7 @@
     },
     "epiR": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -553,7 +553,7 @@
     },
     "evaluate": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -584,7 +584,7 @@
     },
     "fansi": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -616,7 +616,7 @@
     },
     "farver": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -646,7 +646,7 @@
     },
     "foreign": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -680,7 +680,7 @@
     },
     "generics": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -711,7 +711,7 @@
     },
     "glue": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -744,7 +744,7 @@
     },
     "here": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -777,7 +777,7 @@
     },
     "highr": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -807,7 +807,7 @@
     },
     "htmltools": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -880,7 +880,7 @@
     },
     "jsonlite": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -910,7 +910,7 @@
     },
     "kableExtra": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -943,7 +943,7 @@
     },
     "knitr": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -977,7 +977,7 @@
     },
     "labeling": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1003,7 +1003,7 @@
     },
     "lattice": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1036,7 +1036,7 @@
     },
     "lifecycle": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1068,7 +1068,7 @@
     },
     "lubridate": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1105,7 +1105,7 @@
     },
     "magrittr": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1136,7 +1136,7 @@
     },
     "markdown": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1168,7 +1168,7 @@
     },
     "mime": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1198,7 +1198,7 @@
     },
     "munsell": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1225,7 +1225,7 @@
     },
     "openssl": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1257,7 +1257,7 @@
     },
     "pander": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1292,7 +1292,7 @@
     },
     "pillar": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1322,7 +1322,7 @@
     },
     "pkgconfig": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1350,7 +1350,7 @@
     },
     "processx": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1380,7 +1380,7 @@
     },
     "ps": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1411,7 +1411,7 @@
     },
     "purrr": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1443,7 +1443,7 @@
     },
     "rlang": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1475,7 +1475,7 @@
     },
     "rmarkdown": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1508,7 +1508,7 @@
     },
     "rprojroot": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1540,7 +1540,7 @@
     },
     "rstudioapi": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1569,7 +1569,7 @@
     },
     "rvest": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1602,7 +1602,7 @@
     },
     "scales": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1633,7 +1633,7 @@
     },
     "selectr": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1663,7 +1663,7 @@
     },
     "stringi": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1695,7 +1695,7 @@
     },
     "stringr": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1727,7 +1727,7 @@
     },
     "survival": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1758,7 +1758,7 @@
     },
     "sys": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1789,7 +1789,7 @@
     },
     "tibble": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1821,7 +1821,7 @@
     },
     "tidyselect": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1854,7 +1854,7 @@
     },
     "tinytex": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1885,7 +1885,7 @@
     },
     "utf8": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1915,7 +1915,7 @@
     },
     "vctrs": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1948,7 +1948,7 @@
     },
     "viridisLite": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -1979,7 +1979,7 @@
     },
     "webshot": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -2010,7 +2010,7 @@
     },
     "xfun": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -2042,7 +2042,7 @@
     },
     "xml2": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -2075,7 +2075,7 @@
     },
     "yaml": {
       "Source": "CRAN",
-      "Repository": null,
+      "Repository": "https://cran.rstudio.com/",
       "GithubRepo": null,
       "GithubUsername": null,
       "GithubRef": null,
@@ -2105,35 +2105,11 @@
     ".travis.yml": {
       "checksum": "40e7ccfeb21e389814ce6dbc306126be"
     },
-    "_book/applications.html": {
-      "checksum": "d41d8cd98f00b204e9800998ecf8427e"
-    },
-    "_book/bookdown-demo.epub": {
-      "checksum": "5eb0cb5f0f9ae307219cfa3e4ea0b6f4"
-    },
-    "_book/bookdown-demo.pdf": {
-      "checksum": "cac7bde695591e5c60672f2c75d72ad6"
-    },
-    "_book/bookdown-demo.tex": {
-      "checksum": "a7e18f7047b242f01e9d288bb743e2b5"
-    },
-    "_book/bookdown-demo_files/figure-html/nice-fig-1.png": {
-      "checksum": "9aa84dbd5bafcad02bd603df1fae9401"
-    },
     "_book/bookdown-demo_files/figure-html/unnamed-chunk-10-1.png": {
-      "checksum": "e7e4817a9dec6da1e59bffe34ab8faae"
-    },
-    "_book/bookdown-demo_files/figure-html/unnamed-chunk-9-1.png": {
-      "checksum": "8073f76efe2ca3bee638a79615dab539"
-    },
-    "_book/final-words.html": {
-      "checksum": "d41d8cd98f00b204e9800998ecf8427e"
+      "checksum": "bd8199e0ed45b996d92180a4978224fe"
     },
     "_book/index.html": {
       "checksum": "9891a77853de95a9ae8d9602f8ea4220"
-    },
-    "_book/intro.html": {
-      "checksum": "b378d72efd1384bcb3426288e6ee0255"
     },
     "_book/libs/bsTable-3.3.7/bootstrapTable.js": {
       "checksum": "e768e9988e3af4dff9d2fcc76cff2a97"
@@ -2204,26 +2180,14 @@
     "_book/libs/lightable-0.0.1/lightable.css": {
       "checksum": "25547ce4d44910ea8f377212d34397fa"
     },
-    "_book/literature.html": {
-      "checksum": "2138075b7096d9203b4345620c070dcc"
-    },
-    "_book/methods.html": {
-      "checksum": "d41d8cd98f00b204e9800998ecf8427e"
-    },
     "_book/reference-keys.txt": {
       "checksum": "94c0070f70f5ff10c3468afb872edd1f"
-    },
-    "_book/references.html": {
-      "checksum": "d41d8cd98f00b204e9800998ecf8427e"
     },
     "_book/search_index.json": {
       "checksum": "b899feded340f44aa3cd5c42f05013e7"
     },
     "_book/style.css": {
       "checksum": "19f0b33dc27d4f748874d2cde5cea5bc"
-    },
-    "_book/week-4-week-4.html": {
-      "checksum": "d41d8cd98f00b204e9800998ecf8427e"
     },
     "_book/Week4.html": {
       "checksum": "c4aeffaa9b3c0f86d1260cb0a9afbbc8"
@@ -2235,7 +2199,7 @@
       "checksum": "9aa84dbd5bafcad02bd603df1fae9401"
     },
     "_bookdown_files/bookdown-demo_files/figure-html/unnamed-chunk-10-1.png": {
-      "checksum": "e7e4817a9dec6da1e59bffe34ab8faae"
+      "checksum": "bd8199e0ed45b996d92180a4978224fe"
     },
     "_bookdown_files/bookdown-demo_files/figure-html/unnamed-chunk-9-1.png": {
       "checksum": "8073f76efe2ca3bee638a79615dab539"
@@ -2245,9 +2209,6 @@
     },
     "_build.sh": {
       "checksum": "98ee04ec84e7b58b6c269171955a3440"
-    },
-    "_data/diet.dta": {
-      "checksum": "a55d8090d671534defe1c511bfcef829"
     },
     "_demofiles/01-intro.Rmd": {
       "checksum": "bb46440e1ca19e6ca0b0d0d79465940c"
@@ -2268,28 +2229,7 @@
       "checksum": "83e2185d4e96ea8a2e13b861f212bd5a"
     },
     "_deploy.sh": {
-      "checksum": "4d3ef66394aa6a1e62fae057ff1b354a"
-    },
-    "_Files/PH241-CodingGuide.nb.html": {
-      "checksum": "9e42d882528757b25efead2083745982"
-    },
-    "_Files/PH241-CodingGuide.Rmd": {
-      "checksum": "39c8419b46e53900cb97ff7eaef792bd"
-    },
-    "_Files/Week4-CodingGuide.docx": {
-      "checksum": "c694c2a9711c407d1e565ec6ae227a67"
-    },
-    "_Files/Week4-CodingGuide.html": {
-      "checksum": "e4840558c9ef499e5d9c07966cf8b522"
-    },
-    "_Files/Week4-CodingGuide.pdf": {
-      "checksum": "7b2ae161eeba4d84e1d4d195133f03b5"
-    },
-    "_Files/Week4-CodingGuide.R": {
-      "checksum": "ce888a8ffa97db9d7df0559180dc03c2"
-    },
-    "_Files/Week4-CodingGuide.Rmd": {
-      "checksum": "cff657e3cd04560d703baccc4c211661"
+      "checksum": "5ecd7f948c6bce74d341465e1c9ac0cd"
     },
     "_output.yml": {
       "checksum": "4c36907a13b8097992ef77a7a979e7e1"
@@ -2376,7 +2316,7 @@
       "checksum": "57f6b88fc66dc37f60d96bdc9cf66000"
     },
     "packages.html": {
-      "checksum": "7c3ce361c7aa3941a297d7a82e8c36fe"
+      "checksum": "52277a11fcdc0a5615a5ab5cf996c26a"
     },
     "packrat/desc/askpass": {
       "checksum": "be0dd9e7ac93f1991b86b04e84def837"
@@ -2595,7 +2535,7 @@
       "checksum": "9b974332700a3e7ac533b9c0a09b4a89"
     },
     "Week4.html": {
-      "checksum": "797e3ce53e26dd0eec9ab9552687a9b5"
+      "checksum": "90db5a4b34d6adc7b051552a65151110"
     }
   },
   "users": null
