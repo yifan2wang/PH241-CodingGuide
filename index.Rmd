@@ -12,10 +12,7 @@ github-repo: rstudio/bookdown-demo
 description: ""
 ---
 
-# Prerequisites
-
-
-
+# Packages
 
 
 
