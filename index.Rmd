@@ -12,7 +12,64 @@ github-repo: rstudio/bookdown-demo
 description: ""
 ---
 
+```{r include=FALSE}
+library(dplyr)
+library(epiR)
+library(epitools)
+library(foreign)
+```
+
 # Packages
+
+- we always include a setup chunk to include packages we use in the rmarkdown file, these are packages we usually use in this course:
+
+1. dplyr[^1]
+
+> dplyr is a grammar of data manipulation, providing a consistent set of verbs that help you solve the most common data manipulation challenges.
+
+```{r eval=FALSE}
+library(dplyr)
+mutate()    # adds new variables that are functions of existing variables
+select()    # picks variables based on their names.
+filter()    # picks cases based on their values.
+summarise() # reduces multiple values down to a single summary.
+arrange()   # changes the ordering of the rows.
+```
+
+
+
+2. epiR[^2]
+
+> Tools for the analysis of epidemiological and surveillance data. 
+
+> Contains functions for directly and indirectly adjusting measures of disease frequency, quantifying measures of association on the basis of single or multiple strata of count data presented in a contingency table, computation of confidence intervals around incidence risk and incidence rate estimates and sample size calculations for cross-sectional, case-control and cohort studies. 
+
+```{r eval=FALSE}
+library(epiR)
+epi.2by2() # Computes summary measures of risk and a chi-squared test for difference in a 2 by 2 table
+```
+
+3. epitools[^3]
+
+> Epidemiology Tools
+
+> Tools for training and practicing epidemiologists including methods for two-way and multi-way contingency tables.
+
+```{r eval=FALSE}
+library(epitools)
+epitable() # Create r x c contigency table for r exposure levels and c outcome levels
+epitab() # Calculates risks, RR, OR, and CIs for epidemiologic data
+```
+
+4. foreign[^4]
+
+> Reading and writing data stored by some versions of 'Epi Info', 'Minitab', 'S', 'SAS', 'SPSS', 'Stata', 'Systat', 'Weka',
+and for reading and writing some 'dBase' files.
+
+```{r eval=FALSE}
+library(foreign)
+read.dta() # Reads a file in Stata version 5–12 binary format into a data frame
+```
 
 
 
@@ -22,3 +79,20 @@ knitr::write_bib(c(
   .packages(), 'bookdown', 'knitr', 'rmarkdown'
 ), 'packages.bib')
 ```
+
+[^1]: Hadley Wickham, Romain François, Lionel Henry and Kirill Müller (2020). dplyr: A Grammar of Data Manipulation. R package version 1.0.2. https://CRAN.R-project.org/package=dplyr
+
+[^2]: Mark Stevenson, Evan Sergeant with contributions from Telmo Nunes,
+  Cord Heuer, Jonathon Marshall, Javier Sanchez, Ron Thornton, Jeno
+  Reiczigel, Jim Robison-Cox, Paola Sebastiani, Peter Solymos,
+  Kazuki Yoshida, Geoff Jones, Sarah Pirikahu, Simon Firestone, Ryan
+  Kyle, Johann Popp, Mathew Jay and Charles Reynard. (2020). epiR:
+  Tools for the Analysis of Epidemiological Data. R package version
+  2.0.17. https://CRAN.R-project.org/package=epiR
+
+[^3]: Tomas J. Aragon (2020). epitools: Epidemiology Tools. R package
+  version 0.5-10.1. https://CRAN.R-project.org/package=epitools
+  
+[^4]: R Core Team (2020). foreign: Read Data Stored by 'Minitab', 'S',
+  'SAS', 'SPSS', 'Stata', 'Systat', 'Weka', 'dBase', .... R package
+  version 0.8-81. https://CRAN.R-project.org/package=foreign
