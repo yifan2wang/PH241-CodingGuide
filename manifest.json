@@ -2106,10 +2106,10 @@
       "checksum": "40e7ccfeb21e389814ce6dbc306126be"
     },
     "_book/bookdown-demo_files/figure-html/unnamed-chunk-10-1.png": {
-      "checksum": "bd8199e0ed45b996d92180a4978224fe"
+      "checksum": "f19f17511fcfa10b3d931276b6159f38"
     },
     "_book/index.html": {
-      "checksum": "9891a77853de95a9ae8d9602f8ea4220"
+      "checksum": "1817b9d8ea9c845b8ddc7614df2a225f"
     },
     "_book/libs/bsTable-3.3.7/bootstrapTable.js": {
       "checksum": "e768e9988e3af4dff9d2fcc76cff2a97"
@@ -2180,6 +2180,9 @@
     "_book/libs/lightable-0.0.1/lightable.css": {
       "checksum": "25547ce4d44910ea8f377212d34397fa"
     },
+    "_book/PH241-Coding-Guide_files/figure-html/unnamed-chunk-10-1.png": {
+      "checksum": "45898936ef30afbf11bff00a284d575d"
+    },
     "_book/reference-keys.txt": {
       "checksum": "94c0070f70f5ff10c3468afb872edd1f"
     },
@@ -2190,22 +2193,25 @@
       "checksum": "19f0b33dc27d4f748874d2cde5cea5bc"
     },
     "_book/Week4.html": {
-      "checksum": "c4aeffaa9b3c0f86d1260cb0a9afbbc8"
+      "checksum": "3a6e0f745e5e672a75ac8026e603e35e"
     },
     "_bookdown.yml": {
-      "checksum": "3462b303c016bf893af0b8577017403c"
+      "checksum": "e141b058fcc84e43dbcd26c3a638d5bc"
     },
     "_bookdown_files/bookdown-demo_files/figure-html/nice-fig-1.png": {
       "checksum": "9aa84dbd5bafcad02bd603df1fae9401"
     },
     "_bookdown_files/bookdown-demo_files/figure-html/unnamed-chunk-10-1.png": {
-      "checksum": "bd8199e0ed45b996d92180a4978224fe"
+      "checksum": "f19f17511fcfa10b3d931276b6159f38"
     },
     "_bookdown_files/bookdown-demo_files/figure-html/unnamed-chunk-9-1.png": {
       "checksum": "8073f76efe2ca3bee638a79615dab539"
     },
     "_bookdown_files/bookdown-demo_files/figure-latex/unnamed-chunk-10-1.pdf": {
       "checksum": "fb892b2588e836a025bcd5c97cd1129e"
+    },
+    "_bookdown_files/PH241-Coding-Guide_files/figure-html/unnamed-chunk-10-1.png": {
+      "checksum": "45898936ef30afbf11bff00a284d575d"
     },
     "_build.sh": {
       "checksum": "98ee04ec84e7b58b6c269171955a3440"
@@ -2232,7 +2238,7 @@
       "checksum": "5ecd7f948c6bce74d341465e1c9ac0cd"
     },
     "_output.yml": {
-      "checksum": "4c36907a13b8097992ef77a7a979e7e1"
+      "checksum": "5c181bf96a8b1626c750d46168df5a77"
     },
     "04-epi2by2-chisq.Rmd": {
       "checksum": "62034e5046f5238fbb2217b556eea058"
@@ -2316,7 +2322,7 @@
       "checksum": "57f6b88fc66dc37f60d96bdc9cf66000"
     },
     "packages.html": {
-      "checksum": "52277a11fcdc0a5615a5ab5cf996c26a"
+      "checksum": "64eb98caf4f479d118f2be822e2baccf"
     },
     "packrat/desc/askpass": {
       "checksum": "be0dd9e7ac93f1991b86b04e84def837"
@@ -2535,7 +2541,7 @@
       "checksum": "9b974332700a3e7ac533b9c0a09b4a89"
     },
     "Week4.html": {
-      "checksum": "90db5a4b34d6adc7b051552a65151110"
+      "checksum": "c7cd3b7e55e0de62d4045621b95e9f71"
     }
   },
   "users": null

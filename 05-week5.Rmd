@@ -1,0 +1,229 @@
+# Week 5
+
+## Sample Size Calculation (Optional)
+
+### Method 1: `power.prop.test`
+
++ Available in R base (no additional packages needed).
+
+```{r eval=FALSE}
+power.prop.test(n = NULL, 
+                p1 = NULL, p2 = NULL, 
+                sig.level = 0.05,
+                power = NULL,
+                alternative = c("two.sided", "one.sided"))
+```
+
+  - The input for the function are:
+    - `n`: number of observations (per group)
+    - `p1` & `p2`: probability in two groups
+    - `sig.level`: significance level (type I error probability), default value is 0.05 ($\alpha = 0.05$)
+    - `power`	: power of test (1 - Type II error probability, $1-\beta$)
+    - `alternative`: one- or two-sided test.
+  
+  + Your input can be four of five parameters in  `n`,`p1`,`p2`,`sig.level` and `power`, then the output would include the calculated "missing" parameter.
+  
++ Determine parameters to obtain a target power, or compute the power of the two-sample test for proportions.
+  
+  - Say you want to know what sample size you need for an experiment in which you're seeking to determine whether or not __the difference in two proportions of success__ is statistically significant with target power. 
+
+  - Look at historical data to establish baseline predictions. Say that in the past, $P(D \mid \bar{E}) = 0.10$ and $P(D \mid E)=0.17$. Assume that these probabilities are based on relatively large amounts of data.
+
+```{r,warning=F,message=F}
+# determine parameters to obtain a target power
+n.out <- power.prop.test(
+                p1 = 0.17, p2 = 0.10, 
+                sig.level = 0.05,
+                power = 0.8,
+                alternative = "two.sided")
+n.out
+```
+
++ NOTE: n is number in **each** group
+
+  + Thus, you need around $n/2 \ge 373$ in each arm, and a total of $n \ge 746$.
+  
++ __Exercise__: 
+
+  - Change the value of sig.level, power, p1 and p2 to explore how sample size are affected by these parameters. 
+
+  - Say you decided to draw a sample with 375 observations in each arm, how much power can you acheive in this test?
+
+```{r,warning=F,message=F}
+# Compute the power of the two-sample test for proportions
+power.out <- power.prop.test(
+                n=375,
+                p1=0.17, p2 = 0.10, 
+                sig.level = 0.05, alternative = "two.sided")
+power.out
+```
+
++ Thus, you can achieve 0.80 power in this test.
+  
+### Method 2: Formula and `qnorm`
+
+$$n > \frac{2*(Z_{1-\alpha/2}+Z_{1-\beta})^2*[p_1*(1-p_1)+p_2*(1-p_2)]}{(p_1-p_2)^2}$$
+- To get the `Z-value` corresponding to a given probability in the formula, we use `qnorm`: 
+
+```{r eval=FALSE}
+qnorm(p, mean = 0, sd = 1, lower.tail = TRUE)
+```
+
+- The input for the function are:
+  - `p`: (vector of) probability(ies).
+
+  - `mean` and `sd`: (vector of) mean(s) and standard deviation(s).
+
+  - `lower.tail`: logical; if TRUE (default), probabilities are $P[X \le x]$, otherwise, $P[X > x]$.
+
+```{r}
+# Z-scores
+zalpha = qnorm(1-0.05/2)
+zpower = qnorm(0.8)
+c(zalpha,zpower)
+p1 = 0.17
+p2 = 0.10
+n <- (2*((zalpha+zpower)^2)*(p1*(1-p1)+p2*(1-p2)))/((p1-p2)^2)
+n 
+```
+
++ NOTE: n is number in **total** 
+
+  + Thus, you need a total of $n \ge 741$.
+
+## epitable
+
++ Create r x c contigency table for r exposure levels and c outcome levels
+
+```{r eval=FALSE}
+epitable(..., ncol =2, byrow = TRUE,
+         rev = c("neither", "rows", "columns", "both"))
+```
+
+
+- `...`	:
+  
+  - (1) four or more integers that be converted into r x 2 table (the number of integers must be even), e.g. `epitable(88, 20, 555, 347)`
+  - (2) two categorical vectors (1st vector is exposure with r levels, 2nd vector is outcome with 2 levels), e.g. `epitable("Exposure"=exposure, "Disease"=outcome)`, or `epitable(dat$expo, dat$out)`
+  - (3) r x 2 contingency table, e.g. `epitable(matrix(1:6, 3, 2))`
+  - (4) single vector that be converted into r x 2 table (the number of integers must be even), e.g. `epitable(c(88, 20, 555, 347))`
+  
+- `ncol`: Default `ncol=2`, number of columns when a table is constructed from a vector or sequence of numbers
+  
+- `byrow`: Default `byrow=TRUE` and single vector or collection of numbers is read in row-wise. 
+  - Set to FALSE to read in column-wise.
+  - e.g. `epitable(88, 20, 555, 347)`, by default 88, 20 would be regarded as the first row (under the same exposure status, Diseased and No disease respectively), and 555, 347 the second under the other exposure status. 
+  - e.g. `epitable(88, 20, 555, 347, byrow = FALSE)`, then 88, 20 would be regarded as the first column (under the same disease status, Exposed and Unexposed respectively), and 555, 347 the second column under the other disease status.
+
+- `rev`: Default `rev="neither"` means no order reversal in the process, can be"rows", "colums" or "both" to reverse the orders.
+    - Usually the table we get from (2) two categorical vectors would be like: 
+
+```{r, include=FALSE}
+library(foreign)
+library(epitools)
+```
+
+```{r}
+dat <- read.dta("_data/diet.dta")
+epitable(dat$diet, dat$mort)
+```
+
+  - In the output table, the outcomes and predictors (exposure) are listed by 0 and then 1; But in the 2 by 2 tables we usually used for further calculation, the top left cell should be Exposed and Disease (Predictor = 1 & Outcome = 1)
+  
+|          | Disease + | Disease - |
+|:---------|:---------:|:---------:|
+| Expose + |	         |	         |
+| Expose - |		       | 	         | 
+  
+    - So `rev="both"` is added: 
+    
+```{r}
+epitable(dat$diet, dat$mort, rev="both")
+```
+
+- The contingency table created by this function is usually used for additional analyses, for example, the `epitab` function.
+
+## epitab
+
++ Calculates risks, risk ratio, odds ratio, and confidence intervals for epidemiologic data
+
+```{r eval=FALSE}
+epitab(x, y = NULL,
+       method = c("oddsratio", "riskratio", "rateratio"),
+       conf.level = 0.95,
+       rev = c("neither", "rows", "columns", "both"),           
+       oddsratio = c("wald", "fisher", "midp", "small"),
+       riskratio = c("wald", "boot", "small"),
+       rateratio = c("wald", "midp"),
+       pvalue = c("fisher.exact", "midp.exact", "chi2"),
+       correction = FALSE,
+       verbose = FALSE)
+```
+
+- Input data:
+
+```{r echo=FALSE}
+library(kableExtra)
+xy <- data.frame("odds\ ratio\ or\ risk\ ratio" = c("$$\\checkmark$$", "$$\\checkmark$$ (transformed into r x 2 table in row-wise order)", "$$\\checkmark$$ (both are single factor or character vectors)"), 
+                 "rate\ ratio" = c("$$\\checkmark$$ (1stcol: disease counts; 2nd col: person time at risk)", "$$\\checkmark$$ (counts followed by person time at risk)","$$\\checkmark$$ (x = single numeric vector of counts, y = numeric vector of corresponding person time at risk) "),
+                 row.names = c("x = r x 2 table", "x = numeric vectors", "x and y")
+  )
+
+kbl(xy) %>%
+  kable_paper("striped", full_width = F) 
+  #kable_classic()
+```
+
+- Other arguments and default values
+
+  - measure of association: `method = "oddsratio"`
+  
+  - confidence level: `conf.level = 0.05`
+  
+  - estimation methods: The default of `oddsratio`, `riskratio` and  `rateratio` are `"wald"`
+  
+  - `pvalue = "fisher.exact"`
+  
+  - `correction = FALSE` means no Yate's continuity correction.
+  
+  - `verbose = FALSE`, set to `TRUE` to return more detailed results 
+  
+- The function `epitab` requires:
+
+|        | Disease - | Disease + |
+|:-------|:-------:|:------:|
+|Expose - |        |        | 
+|Expose + |        |        |
+
+
+```{r}
+stat <- epitab(epitable(dat$diet, dat$mort))
+stat
+```
+
+- Outputs:
+
+```{r}
+stat$tab
+```
++ The epidemiologic tabulation generated.
+
+```
+stat$measure
+[1] "wald"
+```
+
++ Wald (i.e. Normal approximation) is used to generate the CIs
+    
+```
+$statconf.level
+[1] 0.95
+```
+
++ The confidence level is set to 95%
+
+```
+stat$pvalue
+[1] "fisher.exact"
+```
++ The Fisher exact test was used to generate the p-value.
